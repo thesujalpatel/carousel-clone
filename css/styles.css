@@ -1,0 +1,126 @@
+:root {
+  /* Main Colors */
+  --color-background: #fff;
+  --color-foreground: #000;
+  --color-accent: #777777;
+  --color-primary: #0d6efd;
+  --color-secondary: #5c636a;
+  --color-header-bg: #212529;
+
+  /* Alpha Shades */
+  /* 70 Shades */
+  --color-background-70: color-mix(
+    in srgb,
+    var(--color-background) 70%,
+    transparent
+  );
+
+  /* 30% Shades */
+  --color-background-30: color-mix(
+    in srgb,
+    var(--color-background) 30%,
+    transparent
+  );
+  --color-foreground-30: color-mix(
+    in srgb,
+    var(--color-foreground) 30%,
+    transparent
+  );
+  --color-primary-30: color-mix(in srgb, var(--color-primary) 30%, transparent);
+  --color-secondary-30: color-mix(
+    in srgb,
+    var(--color-secondary) 30%,
+    transparent
+  );
+
+  /* Fonts */
+  --font-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-sans-serif);
+}
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Component Variations */
+/* link */
+.link {
+  text-decoration: none;
+  color: var(--color-background-70);
+  transition: color 0.2s ease;
+}
+.link:hover {
+  color: var(--color-background);
+}
+.link-active {
+  color: var(--color-background);
+}
+.link-disabled {
+  color: var(--color-background-30);
+  pointer-events: none;
+}
+
+/* Navigation */
+header {
+  background-color: var(--color-header-bg);
+}
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.nav-static {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  width: 250px;
+}
+.nav-options {
+  display: flex;
+  gap: 10px;
+}
+.nav-collapsible,
+.btn-menu {
+  display: none;
+}
+.device-md {
+  display: flex;
+}
+/* Tab */
+@media (max-width: 1024px) {
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-collapsible,
+  .btn-menu {
+    display: flex;
+  }
+  .nav-collapsible {
+    flex-direction: column;
+  }
+  .device-md {
+    display: none;
+  }
+  .nav-options {
+    flex-direction: column;
+  }
+}
