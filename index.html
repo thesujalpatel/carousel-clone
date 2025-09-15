@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Carousel Clone</title>
@@ -31,11 +39,15 @@
               <div class="nav-right">
                 <div class="search-bar device-md">
                   <input type="text" placeholder="Search..." />
-                  <button class="btn btn-search">Search</button>
+                  <button class="button button-action">Search</button>
                 </div>
 
                 <!-- Mobile menu button -->
-                <button class="btn btn-menu" title="Open navigation menu">
+                <button
+                  class="button button-toggle"
+                  title="Open navigation menu"
+                  id="menu-btn"
+                >
                   <svg
                     class="menu-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +55,7 @@
                   >
                     <path
                       d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
-                      fill="var(--color-light)"
+                      fill="var(--light)"
                     />
                   </svg>
                 </button>
@@ -58,13 +70,194 @@
               </div>
               <div class="search-bar">
                 <input type="text" placeholder="Search..." />
-                <button class="btn btn-search">Search</button>
+                <button class="button button-action">Search</button>
               </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Carousel Section -->
+      <section class="carousel-section">
+        <div class="carousel-indicators">
+          <div class="carousel-control">
+            <button
+              class="button button-control"
+              id="prev-btn"
+              title="Previous Slide"
+            >
+              &#10094;
+            </button>
+            <button
+              class="button button-control"
+              id="next-btn"
+              title="Next Slide"
+            >
+              &#10095;
+            </button>
+          </div>
+          <div class="carousel-thumbnails">
+            <button class="button thumbnail" title="Go to slide 1">
+              <div class="thumbnail-state"></div>
+            </button>
+            <button class="button thumbnail" title="Go to slide 2">
+              <div class="thumbnail-state active"></div>
+            </button>
+            <button class="button thumbnail" title="Go to slide 2">
+              <div class="thumbnail-state"></div>
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="carousel-wrapper">
+            <div class="carousel">
+              <div class="carousel-item">
+                <div class="carousel-title">Another example headline.</div>
+                <div class="carousel-description">
+                  Some representative placeholder content for the second slide
+                  of the carousel.
+                </div>
+                <div class="carousel-actions">
+                  <button class="button button-primary button-lg">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Section -->
+      <section class="feature-section">
+        <div class="container">
+          <div class="feature-wrapper">
+            <div class="feature-card">
+              <div class="feature-card-image-wrapper">
+                <img
+                  class="feature-card-image"
+                  src="https://picsum.photos/seed/picsum/150?grayscale"
+                  alt="Feature image"
+                />
+              </div>
+              <div class="feature-card-title">Heading</div>
+              <div class="feature-card-description">
+                Some representative placeholder content for the three columns of
+                text below the carousel. This is the first column.
+              </div>
+              <button class="button button-secondary">View Details</button>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-image-wrapper">
+                <img
+                  class="feature-card-image"
+                  src="https://picsum.photos/seed/picsum/150?grayscale"
+                  alt="Feature image"
+                />
+              </div>
+              <div class="feature-card-title">Heading</div>
+              <div class="feature-card-description">
+                Some representative placeholder content for the three columns of
+                text below the carousel. This is the first column.
+              </div>
+              <button class="button button-secondary">View Details</button>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-image-wrapper">
+                <img
+                  class="feature-card-image"
+                  src="https://picsum.photos/seed/picsum/150?grayscale"
+                  alt="Feature image"
+                />
+              </div>
+              <div class="feature-card-title">Heading</div>
+              <div class="feature-card-description">
+                Some representative placeholder content for the three columns of
+                text below the carousel. This is the first column.
+              </div>
+              <button class="button button-secondary">View Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-section">
+        <div class="container">
+          <div class="product-wrapper">
+            <div class="product-card">
+              <div class="product-card-content">
+                <div class="product-card-title">
+                  First featurette heading.
+                  <span> It’ll blow your mind.</span>
+                </div>
+                <div class="product-card-description">
+                  Some great placeholder content for the first featurette here.
+                  Imagine some exciting prose here.
+                </div>
+              </div>
+              <div class="product-card-image-wrapper">
+                <img
+                  class="product-card-image"
+                  src="https://picsum.photos/500/500"
+                  alt="Product Image"
+                />
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-card-content">
+                <div class="product-card-title">
+                  First featurette heading.
+                  <span> It’ll blow your mind.</span>
+                </div>
+                <div class="product-card-description">
+                  Some great placeholder content for the first featurette here.
+                  Imagine some exciting prose here.
+                </div>
+              </div>
+              <div class="product-card-image-wrapper">
+                <img
+                  class="product-card-image"
+                  src="https://picsum.photos/500/500"
+                  alt="Product Image"
+                />
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-card-content">
+                <div class="product-card-title">
+                  First featurette heading.
+                  <span> It’ll blow your mind.</span>
+                </div>
+                <div class="product-card-description">
+                  Some great placeholder content for the first featurette here.
+                  Imagine some exciting prose here.
+                </div>
+              </div>
+              <div class="product-card-image-wrapper">
+                <img
+                  class="product-card-image"
+                  src="https://picsum.photos/500/500"
+                  alt="Product Image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <p>
+            © 2017–2021 Company, Inc. · <a href="#">Privacy</a> ·
+            <a href="#"> Terms</a>
+          </p>
+          <a href="#" class="footer-action">Back to top</a>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="js/script.js"></script>
 </html>
