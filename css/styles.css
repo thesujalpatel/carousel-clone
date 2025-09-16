@@ -141,10 +141,13 @@ footer a:any-link {
   color: var(--light);
 }
 .button-control {
-  color: var(--light);
+  color: var(--light-70);
   font-size: 40px;
   height: 100%;
   padding: 0 6%;
+}
+.button-control:hover {
+  color: var(--light);
 }
 
 /* Size */
