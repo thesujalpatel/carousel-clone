@@ -21,10 +21,7 @@
   --dark-30: color-mix(in srgb, var(--dark) 30%, transparent);
 
   /* Alpha Shades - 70% Shades */
-  --primary-70: color-mix(in srgb, var(--primary) 70%, transparent);
-  --secondary-70: color-mix(in srgb, var(--secondary) 70%, transparent);
   --light-70: color-mix(in srgb, var(--light) 70%, transparent);
-  --dark-70: color-mix(in srgb, var(--dark) 70%, transparent);
   --action-70: color-mix(in srgb, var(--action) 70%, transparent);
 
   /* Custome Colors */
