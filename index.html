@@ -23,13 +23,13 @@
           <div class="nav-wrapper">
             <div class="nav-static">
               <div class="nav-left">
-                <div class="nav-logo-wrapper">
+                <a href="#" class="nav-logo-wrapper">
                   <img
                     class="nav-logo"
                     src="assets//svg/Logo.svg"
                     alt="Logo Image"
                   />
-                </div>
+                </a>
                 <div class="nav-options device-md">
                   <a class="link link-active" href="#">Home</a>
                   <a class="link" href="#">Link</a>
@@ -83,7 +83,7 @@
       <!-- Carousel Section -->
       <section class="carousel-section">
         <div class="blur-layer"></div>
-        <div class="carousel-indicators">
+        <!-- <div class="carousel-indicators">
           <div class="carousel-control">
             <button
               class="button button-control"
@@ -111,20 +111,21 @@
               <div class="thumbnail-state"></div>
             </button>
           </div>
-        </div>
-
-        <div class="carousel-wrapper">
-          <div class="carousel">
-            <div class="carousel-item">
-              <div class="carousel-title">Another example headline.</div>
-              <div class="carousel-description">
-                Some representative placeholder content for the second slide of
-                the carousel.
-              </div>
-              <div class="carousel-actions">
-                <button class="button button-primary button-lg">
-                  Learn more
-                </button>
+        </div> -->
+        <div class="container">
+          <div class="carousel-wrapper">
+            <div class="carousel">
+              <div class="carousel-item">
+                <div class="carousel-title">Another example headline.</div>
+                <div class="carousel-description">
+                  Some representative placeholder content for the second slide
+                  of the carousel.
+                </div>
+                <div class="carousel-actions">
+                  <button class="button button-primary button-lg">
+                    Learn more
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -136,55 +137,67 @@
         <div class="container">
           <div class="feature-wrapper">
             <div class="feature-card">
-              <div class="feature-card-image-wrapper">
-                <img
-                  class="feature-card-image"
-                  src="https://picsum.photos/150?random=1"
-                  alt="Feature image"
-                />
+              <div class="feature-card-content">
+                <div class="feature-card-image-wrapper">
+                  <img
+                    class="feature-card-image"
+                    src="https://picsum.photos/150?random=1"
+                    alt="Feature image"
+                  />
+                </div>
+                <h3 class="feature-card-title">Heading 1</h3>
+                <p class="feature-card-description">
+                  Some representative placeholder content for the three columns
+                  of text below the carousel. This is the first column.
+                </p>
               </div>
-              <div class="feature-card-title">Heading 1</div>
-              <div class="feature-card-description">
-                Some representative placeholder content for the three columns of
-                text below the carousel. This is the first column.
+              <div class="feature-card-footer">
+                <button class="button button-secondary">
+                  View Details &#129130;
+                </button>
               </div>
-              <button class="button button-secondary">
-                View Details &#129130;
-              </button>
             </div>
             <div class="feature-card">
-              <div class="feature-card-image-wrapper">
-                <img
-                  class="feature-card-image"
-                  src="https://picsum.photos/150?random=2"
-                  alt="Feature image"
-                />
+              <div class="feature-card-content">
+                <div class="feature-card-image-wrapper">
+                  <img
+                    class="feature-card-image"
+                    src="https://picsum.photos/150?random=1"
+                    alt="Feature image"
+                  />
+                </div>
+                <h3 class="feature-card-title">Heading 1</h3>
+                <p class="feature-card-description">
+                  Some representative placeholder content for the three columns
+                  of text below the carousel. This is the first column.
+                </p>
               </div>
-              <div class="feature-card-title">Heading 2</div>
-              <div class="feature-card-description">
-                Another exciting bit of representative placeholder content. This
-                time, we've moved on to the second column.
+              <div class="feature-card-footer">
+                <button class="button button-secondary">
+                  View Details &#129130;
+                </button>
               </div>
-              <button class="button button-secondary">
-                View Details &#129130;
-              </button>
             </div>
             <div class="feature-card">
-              <div class="feature-card-image-wrapper">
-                <img
-                  class="feature-card-image"
-                  src="https://picsum.photos/150?random=3"
-                  alt="Feature image"
-                />
+              <div class="feature-card-content">
+                <div class="feature-card-image-wrapper">
+                  <img
+                    class="feature-card-image"
+                    src="https://picsum.photos/150?random=1"
+                    alt="Feature image"
+                  />
+                </div>
+                <h3 class="feature-card-title">Heading 1</h3>
+                <p class="feature-card-description">
+                  Some representative placeholder content for the three columns
+                  of text below the carousel. This is the first column.
+                </p>
               </div>
-              <div class="feature-card-title">Heading 3</div>
-              <div class="feature-card-description">
-                And lastly this, the third column of representative placeholder
-                content.
+              <div class="feature-card-footer">
+                <button class="button button-secondary">
+                  View Details &#129130;
+                </button>
               </div>
-              <button class="button button-secondary">
-                View Details &#129130;
-              </button>
             </div>
           </div>
         </div>
@@ -194,14 +207,14 @@
           <div class="product-wrapper">
             <div class="product-card">
               <div class="product-card-content">
-                <div class="product-card-title">
+                <h3 class="product-card-title">
                   First featurette heading.
                   <span> It’ll blow your mind.</span>
-                </div>
-                <div class="product-card-description">
+                </h3>
+                <p class="product-card-description">
                   Some great placeholder content for the first featurette here.
                   Imagine some exciting prose here.
-                </div>
+                </p>
               </div>
               <div class="product-card-image-wrapper">
                 <img
@@ -213,39 +226,38 @@
             </div>
             <div class="product-card">
               <div class="product-card-content">
-                <div class="product-card-title">
-                  Oh yeah, it’s that good.<span> See for yourself.</span>
-                </div>
-                <div class="product-card-description">
-                  Another featurette? Of course. More placeholder content here
-                  to give you an idea of how this layout would work with some
-                  actual real-world content in place.
-                </div>
+                <h3 class="product-card-title">
+                  First featurette heading.
+                  <span> It’ll blow your mind.</span>
+                </h3>
+                <p class="product-card-description">
+                  Some great placeholder content for the first featurette here.
+                  Imagine some exciting prose here.
+                </p>
               </div>
               <div class="product-card-image-wrapper">
                 <img
                   class="product-card-image"
-                  src="https://picsum.photos/500?random=5"
+                  src="https://picsum.photos/500?random=4"
                   alt="Product Image"
                 />
               </div>
             </div>
             <div class="product-card">
               <div class="product-card-content">
-                <div class="product-card-title">
-                  And lastly, this one. <span>Checkmate.</span>
-                </div>
-                <div class="product-card-description">
-                  And yes, this is the last block of representative placeholder
-                  content. Again, not really intended to be actually read,
-                  simply here to give you a better view of what this would look
-                  like with some actual content. Your content.
-                </div>
+                <h3 class="product-card-title">
+                  First featurette heading.
+                  <span> It’ll blow your mind.</span>
+                </h3>
+                <p class="product-card-description">
+                  Some great placeholder content for the first featurette here.
+                  Imagine some exciting prose here.
+                </p>
               </div>
               <div class="product-card-image-wrapper">
                 <img
                   class="product-card-image"
-                  src="https://picsum.photos/500?random=6"
+                  src="https://picsum.photos/500?random=4"
                   alt="Product Image"
                 />
               </div>
