@@ -41,4 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
       menuOpen = false;
     }
   });
+
+  // Handle window resize
+  window.addEventListener("resize", function () {
+    if (menuOpen) {
+      window.innerWidth <= 768
+        ? (document.body.style.overflow = "hidden")
+        : (document.body.style.overflow = "visible");
+    }
+  });
 });
