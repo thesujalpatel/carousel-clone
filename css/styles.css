@@ -320,7 +320,7 @@ header .container {
   gap: 12px;
 }
 .feature-card-image-wrapper {
-  width: 150px;
+  max-width: 150px;
   aspect-ratio: 1/1;
   background-color: var(--accent);
   border-radius: 50%;
